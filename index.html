@@ -116,19 +116,23 @@
 
       <!--==================== LOGOS ====================-->
       <section class="logos section">
-        <h1 class="logos__title">Miles de empresas confian en nosotros</h1>
-        <div class="logos__container container grid">
-          <div class="logos__img">
-            <img src="assets/img/logo1.png" alt="" />
-          </div>
-          <div class="logos__img">
-            <img src="assets/img/logo2.png" alt="" />
-          </div>
-          <div class="logos__img">
-            <img src="assets/img/logo3.png" alt="" />
-          </div>
-          <div class="logos__img">
-            <img src="assets/img/logo4.png" alt="" />
+        <div class="container">
+          <span class="section__subtitle">Ellos confian en nosotros </span>
+          <h2 class="section__title">Empresas usando Pulse<span>.</span></h2>
+
+          <div class="logos__container container grid">
+            <div class="logos__img">
+              <img src="assets/img/logo1.png" alt="" />
+            </div>
+            <div class="logos__img">
+              <img src="assets/img/logo2.png" alt="" />
+            </div>
+            <div class="logos__img">
+              <img src="assets/img/logo3.png" alt="" />
+            </div>
+            <div class="logos__img">
+              <img src="assets/img/logo4.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
@@ -224,36 +228,43 @@
 
       <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact">
-        <div class="contact__container">
+        <div class="contact__container container">
           <span class="section__subtitle">Envianos tu mensaje </span>
           <h2 class="section__title">Formulario de contacto <span>.</span></h2>
           <div class="contact__card">
             <form class="contact-form">
-              <div class="input-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required />
-              </div>
-              <div class="input-group">
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required />
-              </div>
-              <div class="input-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div class="input-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  rows="4"
-                  required
-                ></textarea>
+              <div class="input-container">
+                <div class="input-group">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required />
+
+                  <label for="telefono">Teléfono:</label>
+                  <input type="tel" id="telefono" name="telefono" required />
+
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="input-group">
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
               </div>
               <button class="contact__button button" type="submit">
                 Enviar
               </button>
             </form>
+          </div>
+          <div class="home__images">
+            <div class="home__orbe"></div>
+
+            <div class="home__img">
+              <img src="./assets/img/contact1.jpg" alt="" />
+            </div>
           </div>
         </div>
       </section>
