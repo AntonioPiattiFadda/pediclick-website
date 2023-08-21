@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets//css/styles.css" />
+
+    <title>Pulse Website</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          Pulse <i class="bx bxs-home-alt-2"></i>
+        </a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bxs-home-alt-2"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">
+                <i class="bx bxs-store-alt"></i>
+                <span>Residences</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#value" class="nav__link">
+                <i class="bx bxs-balloon"></i> <span>Value</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-phone"></i> <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+        <a href="#" class="button nav__button"> Subscribe </a>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Transforma <br />
+              Tu Negocio <br />
+              Online
+            </h1>
+            <p class="home__description">
+              Dale vida digital a tu negocio con nosotros. Expandimos tus
+              horizontes comerciales de forma sencilla y efectiva
+            </p>
+            <!-- No agregue el formulario -->
+            <div class="home__value">
+              <div>
+                <h1 class="home__value-number">9K <span>+</span></h1>
+                <span class="home__value-description">
+                  Clientes <br />
+                  Satisfechos
+                </span>
+              </div>
+              <div>
+                <h1 class="home__value-number">20% <span>+</span></h1>
+                <span class="home__value-description">
+                  Incremento <br />
+                  Ventas
+                </span>
+              </div>
+              <div>
+                <h1 class="home__value-number">28K <span>+</span></h1>
+                <span class="home__value-description">
+                  Awards <br />
+                  Winning
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="home__images">
+            <div class="home__orbe"></div>
+
+            <div class="home__img">
+              <img src="./assets/img/home.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== LOGOS ====================-->
+      <section class="logos section">
+        <h1 class="logos__title">Miles de empresas confian en nosotros</h1>
+        <div class="logos__container container grid">
+          <div class="logos__img">
+            <img src="assets/img/logo1.png" alt="" />
+          </div>
+          <div class="logos__img">
+            <img src="assets/img/logo2.png" alt="" />
+          </div>
+          <div class="logos__img">
+            <img src="assets/img/logo3.png" alt="" />
+          </div>
+          <div class="logos__img">
+            <img src="assets/img/logo4.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular">
+        <div class="container">
+          <span class="section__subtitle">Elige lo mejor para ti </span>
+          <h2 class="section__title">Nuestros Planes <span>.</span></h2>
+
+          <div class="popular__container swiper mySwiper">
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide">
+                <img
+                  src="assets/img/popular1.jpg"
+                  alt="popular__img"
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>66.456</h2>
+                  <h3 class="popular__title">Plan inicial</h3>
+                  <p class="popular__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus,
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="assets/img/popular2.jpg"
+                  alt="popular__img"
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>66.456</h2>
+                  <h3 class="popular__title">Lorem ipsun</h3>
+                  <p class="popular__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus,
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="assets/img/popular3.jpg"
+                  alt="popular__img"
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>66.456</h2>
+                  <h3 class="popular__title">Lorem ipsun</h3>
+                  <p class="popular__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus,
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="assets/img/popular4.jpg"
+                  alt="popular__img"
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>$</span>66.456</h2>
+                  <h3 class="popular__title">Lorem ipsun</h3>
+                  <p class="popular__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus,
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-button-next">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== VALUE ====================-->
+      <section class="value section" id="value"></section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container">
+          <span class="section__subtitle">Envianos tu mensaje </span>
+          <h2 class="section__title">Formulario de contacto <span>.</span></h2>
+          <div class="contact__card">
+            <form class="contact-form">
+              <div class="input-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+              </div>
+              <div class="input-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required />
+              </div>
+              <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="input-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button class="contact__button button" type="submit">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SUBSCRIBE ====================-->
+      <section class="subscribe section">
+        <div class="subscribe__container container">
+          <h1 class="subscribe__title">Comienza a usar Pulse</h1>
+          <p class="subscribe__description">
+            Suscribite y empieza a disfrutar de los beneficios que tenemos para
+            nuestros clientes
+          </p>
+          <a href="#" class="button subscribe__button">Get Started</a>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">
+            Pulse
+            <i class="bx bxs-home-alt-2"></i>
+          </a>
+          <p class="footer__description">
+            Our vision is to make all bussiness <br />
+            have the most innovative systems
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title">About</h3>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">About us</a></li>
+              <li><a href="#" class="footer__link">Features</a></li>
+              <li><a href="#" class="footer__link">News & Blog</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Company</h3>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">How we work</a></li>
+              <li><a href="#" class="footer__link">Capital</a></li>
+              <li><a href="#" class="footer__link">Security</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Support</h3>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">FAQs</a></li>
+              <li><a href="#" class="footer__link">Support Center</a></li>
+              <li><a href="#" class="footer__link">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Follow Us</h3>
+            <ul class="footer__social">
+              <a href="" class="footer__social-link" target="_blank"
+                ><i class="bx bxl-facebook-circle"></i>
+              </a>
+              <a href="" class="footer__social-link" target="_blank">
+                <i class="bx bxl-instagram-alt"></i
+              ></a>
+              <a href="" class="footer__social-link" target="_blank">
+                <i class="bx bxl-gmail"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__info container">
+        <span class="footer__copy"> All Rights reserved </span>
+        <div class="footer__privacy">
+          <a href="">Terms & Agreements</a>
+          <a href="">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+
+    <a href="#home" class="scroll__top" id="scroll__top">
+      <i class="bx bx-chevrons-up"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
