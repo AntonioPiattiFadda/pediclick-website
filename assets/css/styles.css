@@ -392,6 +392,7 @@ body.dark-theme {
   padding: 0.5rem 0.5rem 1.5rem;
   margin: 0 auto;
   transition: 0.4s;
+  border-radius: 1.25rem;
 }
 .popular__img {
   border-radius: 1rem;
@@ -443,10 +444,6 @@ body.dark-theme {
   right: calc(50% - 3rem);
 }
 
-/*=============== VALUE ===============*/
-
-/*Rotate icon and add shadows*/
-
 /*=============== CONTACT ===============*/
 /* Tu estilo existente */
 .contact__container {
@@ -463,6 +460,7 @@ body.dark-theme {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 1.25rem;
 }
 
 .contact__img {
@@ -531,6 +529,9 @@ body.dark-theme {
 }
 .contact__button:hover {
   scale: 1.05;
+}
+.contact__images {
+  display: none;
 }
 
 /*=============== SUBSCRIBE ===============*/
@@ -761,8 +762,10 @@ body.dark-theme {
     align-items: center;
     flex-direction: column;
   }
+
   .footer__container {
     grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 767px) {
@@ -783,6 +786,7 @@ body.dark-theme {
   .subscribe__container {
     padding: 3rem 13rem;
   }
+
   .footer__container {
     grid-template-columns: repeat(2, max-content);
     justify-content: space-between;
@@ -790,5 +794,166 @@ body.dark-theme {
 }
 
 /* For large devices */
+@media screen and (min-width: 1023px) {
+  .section {
+    padding: 7.5rem 0 1rem;
+  }
+  .section__title {
+    font-size: 2.25rem;
+  }
+  .section__subtitle {
+    font-size: var(--normal-font-size);
+  }
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+  .nav__menu {
+    width: initial;
+    margin-left: auto;
+  }
+  .nav__list {
+    display: flex;
+    column-gap: 3rem;
+  }
+  .nav__link {
+    color: var(--text-color-light);
+  }
+  .nav__link i {
+    display: none;
+  }
+  .nav__button {
+    display: inline-block;
+  }
+  .active-link {
+    background: none;
+    box-shadow: none;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+  }
+  .change-theme {
+    margin: 0 3rem;
+    color: var(--text-color-light);
+  }
+  .scroll-header .nav__link,
+  .scroll-header .change-theme {
+    color: var(--text-color);
+  }
+  .scroll-header .active-link {
+    color: var(--first-color);
+  }
+  .home {
+    padding-bottom: 0;
+  }
+  .home__container {
+    padding-top: 5rem;
+    column-gap: 2rem;
+  }
+  .home__data {
+    padding-bottom: 4rem;
+  }
+  .home__title {
+    margin-bottom: 2rem;
+  }
+  .home__description {
+    margin-bottom: 3rem;
+  }
+  .home__value {
+    column-gap: 3.5rem;
+  }
+  .home__orbe {
+    width: 504px;
+    height: 611px;
+    border-radius: 236px 236px 12px 12px;
+  }
+  .home__img {
+    width: 472px;
+    height: 634px;
+    border-radius: 236px 236px 12px 12px;
+    bottom: -2.5rem;
+  }
+  .logos__img img {
+    height: 100px;
+  }
+  .popular__container {
+    padding-top: 3rem;
+  }
+  .popular__card {
+    width: 320px;
+    padding: 0.75rem 0.75rem 2rem;
+  }
+  .popular__data {
+    padding: 0 0.25rem 0 0.75rem;
+  }
+
+  .contact__container {
+    display: flex;
+  }
+  /* .contact__images {
+    display: block;
+  } */
+  .contact__images .home__orbe {
+    width: 501px;
+    height: 641px;
+    border-radius: 258px 258px 16px 16px;
+  }
+  .contact__images .home__img {
+    width: 461px;
+    height: 601px;
+    border-radius: 238px 238px 12px 12px;
+  }
+  .subscribe__container {
+    padding: 4rem 10rem 4.5rem;
+    border-radius: 2rem;
+    border: 12px solid var(--first-color-light);
+  }
+  .subscribe__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .subscribe__description {
+    font-size: var(--normal-font-size);
+    padding: 0 8rem;
+  }
+  .subscribe__button {
+    font-size: var(--normal-font-size);
+  }
+  .footer__content {
+    grid-template-columns: repeat(4, max-content);
+  }
+  .footer__title {
+    margin-bottom: 1.5rem;
+  }
+  .footer__links {
+    row-gap: 1rem;
+  }
+  .footer__info {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+  .show-scroll {
+    bottom: 4.5rem;
+    right: 3rem;
+  }
+}
+@media screen and (min-width: 1040px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__container {
+    column-gap: 4rem;
+  }
+}
 
 /* For 2K & 4K resolutions */
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+@media screen and (min-width: px) {
+  body {
+    zoom: 2;
+  }
+}
