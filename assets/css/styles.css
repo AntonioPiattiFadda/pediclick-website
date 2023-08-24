@@ -197,6 +197,7 @@ body.dark-theme {
   z-index: var(--z-fixed);
   transition: 0.4s;
 }
+
 .nav {
   height: var(--header-height);
   display: flex;
@@ -217,10 +218,11 @@ body.dark-theme {
 .nav__logo:hover {
   color: var(--first-color);
 }
+
 @media screen and (max-width: 1023px) {
   .nav__menu {
     position: fixed;
-    bottom: 2rem;
+    bottom: -8rem;
     background-color: var(--container-color);
     box-shadow: 0 8px 24px hsla(228, 66%, 45%, 0.15);
     width: 90%;
@@ -230,6 +232,9 @@ body.dark-theme {
     padding: 1.3rem 3rem;
     border-radius: 1.25rem;
     transition: 0.4s;
+  }
+  .show-nav {
+    bottom: 2rem;
   }
   .nav__list {
     display: flex;

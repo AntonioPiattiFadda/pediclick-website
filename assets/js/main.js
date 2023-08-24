@@ -9,6 +9,7 @@ window.addEventListener('scroll', scrollHeader);
 
 /*=============== SWIPER POPULAR ===============*/
 var swiperPopular = new Swiper('.popular__container', {
+  initialSlide: 1,
   spaceBetween: 32,
   grabCursor: true,
   centeredSlides: true,
@@ -54,6 +55,15 @@ const scrollUp = () => {
     : scrollUp.classList.remove('show-scroll');
 };
 window.addEventListener('scroll', scrollUp);
+/*=============== SHOW NAV ===============*/
+const showNav = () => {
+  const navUp = document.getElementById('nav__menu');
+  // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+  this.scrollY >= 100
+    ? navUp.classList.add('show-nav')
+    : navUp.classList.remove('show-nav');
+};
+window.addEventListener('scroll', showNav);
 
 /*=============== DARK LIGHT THEME ===============*/
 const themeButton = document.getElementById('theme-button');
