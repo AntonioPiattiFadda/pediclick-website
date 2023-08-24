@@ -91,3 +91,22 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  //     reset: true
+});
+
+sr.reveal(
+  '.home__social, .popular__container, .subscribe__container, .footer__container',
+  {}
+);
+sr.reveal('.home__img, .home__orbe', { origin: 'bottom' });
+sr.reveal('.contact__container', { origin: 'right' });
+sr.reveal('.home__title, .home__subtitle, .home__description, .home__data', {
+  delay: 300,
+});
+sr.reveal('.home__contact-icon', { delay: 400 });
+sr.reveal('.logos__img', { interval: 100 });
