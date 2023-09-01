@@ -21,7 +21,24 @@ var swiperPopular = new Swiper('.popular__container', {
   },
 });
 
-/*=============== VALUE ACCORDION ===============*/
+/*=============== POPULAR ACCORDION ===============*/
+
+// Obtén el botón y el menú por sus clases
+const propertyButton = document.querySelector('.property-button');
+const propertyMenu = document.querySelector('.property-menu');
+
+// Agrega un evento de clic al botón para mostrar/ocultar el menú
+propertyButton.addEventListener('click', () => {
+  // Cambia el estado de visibilidad del menú
+  if (
+    propertyMenu.style.display === 'none' ||
+    propertyMenu.style.display === ''
+  ) {
+    propertyMenu.style.display = 'block';
+  } else {
+    propertyMenu.style.display = 'none';
+  }
+});
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]');
