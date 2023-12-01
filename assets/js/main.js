@@ -137,3 +137,95 @@ sr.reveal('.home__title, .home__subtitle, .home__description, .home__data', {
 });
 sr.reveal('.home__contact-icon', { delay: 400 });
 sr.reveal('.logos__img', { interval: 100 });
+
+/*==================== SEND CONTACT INFORMATION ====================*/
+
+const sendButton = document.getElementById('send--button');
+
+const nameInput = document.getElementById('name__input');
+const emailInput = document.getElementById('email__input');
+const messageInput = document.getElementById('message__input');
+const phoneInput = document.getElementById('phone__input');
+
+function validarFormulario() {
+  var errorMessage = document.getElementById('error__message');
+  let error = 'Por favor rellena los datos faltantes';
+
+  if (nameInput.value === '') {
+    errorMessage.innerHTML = error;
+    nameInput.focus();
+    nameInput.classList.add('error');
+    setTimeout(function () {
+      errorMessage.innerHTML = '';
+      nameInput.classList.remove('error');
+    }, 2000);
+  }
+  if (emailInput.value === '') {
+    errorMessage.innerHTML = error;
+    emailInput.focus();
+    emailInput.classList.add('error');
+    setTimeout(function () {
+      errorMessage.innerHTML = '';
+      emailInput.classList.remove('error');
+    }, 2000);
+  }
+  if (messageInput.value === '') {
+    errorMessage.innerHTML = error;
+    messageInput.focus();
+    messageInput.classList.add('error');
+    setTimeout(function () {
+      errorMessage.innerHTML = '';
+      messageInput.classList.remove('error');
+    }, 2000);
+    if (
+      nameInput.value === '' ||
+      emailInput.value === '' ||
+      messageInput.value === ''
+    ) {
+      return;
+    }
+  }
+  return 'OK';
+}
+
+function mostrarMensajeEnviado(language) {
+  //FIXME - Cambiar nombre del ID
+  var modal = document.getElementById('mensajeEnviadoModal');
+  modal.innerHTML = '<p>Gracias por tu mensaje!  <span>✔</span></p>';
+  modal.style.display = 'block';
+  setTimeout(function () {
+    modal.style.display = 'none';
+  }, 3000);
+}
+
+document.getElementById('form').addEventListener('submit', function (event) {
+  alert('Estoy en el submit y previne el default del evento');
+  event.preventDefault();
+
+  const serviceID = 'default_service';
+  const templateID = 'template_jlzyxinSASD';
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+  });
+
+  if (sendButtonEn.classList.contains('disabled')) {
+    const validator = validarFormulario();
+    if (validator !== 'OK') return;
+    sendButton.classList.add('cargando');
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        sendButton.classList.remove('cargando');
+        mostrarMensajeEnviado('es');
+        emailInput.value = '';
+        nameInput.value = '';
+        messageInput.value = '';
+        phoneInput.value = '';
+      },
+      (err) => {
+        sendButton.classList.remove('cargando');
+        alert('Error!');
+      }
+    );
+  }
+});
